@@ -17,7 +17,7 @@ end
 post '/named-cat' do
   p params
   @name = params[:name]
-  erb(:index) 
+  erb(:image) 
 end
 
 get '/form' do 
