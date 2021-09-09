@@ -1,12 +1,11 @@
 <h1>My name is <%= @name %></h1>
-<!-- #<img src = 'https://i.imgur.com/jFaSxym.png' style = 'border: dashed red;' > -->
+#<img src = 'https://i.imgur.com/jFaSxym.png' style = 'border: dashed red;' >
 
 
   <% if @name.nil? %>  
-    <form action="/named-cat">
+    <form action="/named-cat" method="post">
       <input type="text" name="name">
       <input type="submit" name="submit">
     </form>
   <% end %>
-
 
